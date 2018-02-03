@@ -16,6 +16,13 @@ public class UserSelect {
 		BufferedImage buttonIcon = ImageIO.read(new File("lib/patButton.jpg"));
 		JButton patientSelect = new JButton(new ImageIcon(buttonIcon));
 		patientSelect.setAlignmentX(Component.CENTER_ALIGNMENT);
+		patientSelect.setOpaque(false);
+		patientSelect.setContentAreaFilled(false);
+		patientSelect.setBorderPainted(false);
+		
+		
+		
+		
 		JButton doctorSelect = new JButton("Doctor");
 		doctorSelect.setAlignmentX(Component.CENTER_ALIGNMENT);
 		JButton pharSelect = new JButton("Pharmacist");
