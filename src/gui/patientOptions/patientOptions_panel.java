@@ -16,27 +16,23 @@ public class patientOptions_panel extends JPanel {
 	 * Create the panel.
 	 */
 	public patientOptions_panel() {
-		SpringLayout springLayout = new SpringLayout();
-		setLayout(springLayout);
 		
 		JButton btnViewYourProfile = new JButton("");
-		springLayout.putConstraint(SpringLayout.WEST, btnViewYourProfile, 63, SpringLayout.WEST, this);
+		btnViewYourProfile.setBounds(63, 443, 469, 129);
 		btnViewYourProfile.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\View-Profile.png"));
 		btnViewYourProfile.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				patient_Frame.setPanel(1);
 			}
 		});
+		setLayout(null);
 		btnViewYourProfile.setOpaque(false);
 		btnViewYourProfile.setContentAreaFilled(false);
 		btnViewYourProfile.setBorderPainted(false);
 		add(btnViewYourProfile);
 		
 		JButton btnFillPrescriptions = new JButton("");
-		springLayout.putConstraint(SpringLayout.NORTH, btnFillPrescriptions, 156, SpringLayout.NORTH, this);
-		springLayout.putConstraint(SpringLayout.EAST, btnViewYourProfile, 0, SpringLayout.EAST, btnFillPrescriptions);
-		springLayout.putConstraint(SpringLayout.WEST, btnFillPrescriptions, 63, SpringLayout.WEST, this);
-		springLayout.putConstraint(SpringLayout.EAST, btnFillPrescriptions, -67, SpringLayout.EAST, this);
+		btnFillPrescriptions.setBounds(63, 70, 469, 175);
 		btnFillPrescriptions.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Fill-Prescription.png"));
 		btnFillPrescriptions.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -49,11 +45,12 @@ public class patientOptions_panel extends JPanel {
 		add(btnFillPrescriptions);
 		
 		JButton btnTakeSurvey = new JButton("");
-		springLayout.putConstraint(SpringLayout.SOUTH, btnViewYourProfile, -7, SpringLayout.NORTH, btnTakeSurvey);
-		springLayout.putConstraint(SpringLayout.SOUTH, btnTakeSurvey, -214, SpringLayout.SOUTH, this);
-		springLayout.putConstraint(SpringLayout.NORTH, btnTakeSurvey, 556, SpringLayout.NORTH, this);
-		springLayout.putConstraint(SpringLayout.EAST, btnTakeSurvey, -81, SpringLayout.EAST, this);
-		springLayout.putConstraint(SpringLayout.WEST, btnTakeSurvey, 74, SpringLayout.WEST, this);
+		btnTakeSurvey.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				patient_Frame.setPanel(5);
+			}
+		});
+		btnTakeSurvey.setBounds(63, 609, 457, 170);
 		btnTakeSurvey.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Write-Review.png"));
 		btnTakeSurvey.setOpaque(false);
 		btnTakeSurvey.setContentAreaFilled(false);
@@ -61,12 +58,7 @@ public class patientOptions_panel extends JPanel {
 		add(btnTakeSurvey);
 		
 		JButton btnViewLocalPharmacies = new JButton("");
-		springLayout.putConstraint(SpringLayout.NORTH, btnViewYourProfile, 6, SpringLayout.SOUTH, btnViewLocalPharmacies);
-		springLayout.putConstraint(SpringLayout.SOUTH, btnViewLocalPharmacies, -481, SpringLayout.SOUTH, this);
-		springLayout.putConstraint(SpringLayout.SOUTH, btnFillPrescriptions, -6, SpringLayout.NORTH, btnViewLocalPharmacies);
-		springLayout.putConstraint(SpringLayout.NORTH, btnViewLocalPharmacies, 289, SpringLayout.NORTH, this);
-		springLayout.putConstraint(SpringLayout.WEST, btnViewLocalPharmacies, 63, SpringLayout.WEST, this);
-		springLayout.putConstraint(SpringLayout.EAST, btnViewLocalPharmacies, 0, SpringLayout.EAST, btnViewYourProfile);
+		btnViewLocalPharmacies.setBounds(63, 275, 469, 126);
 		btnViewLocalPharmacies.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				patient_Frame.setPanel(2);
@@ -77,11 +69,6 @@ public class patientOptions_panel extends JPanel {
 		btnViewLocalPharmacies.setContentAreaFilled(false);
 		btnViewLocalPharmacies.setBorderPainted(false);
 		add(btnViewLocalPharmacies);
-		
-		JButton btnHelp = new JButton("Help");
-		springLayout.putConstraint(SpringLayout.SOUTH, btnHelp, -10, SpringLayout.SOUTH, this);
-		springLayout.putConstraint(SpringLayout.EAST, btnHelp, -10, SpringLayout.EAST, this);
-		add(btnHelp);
 
 	}
 

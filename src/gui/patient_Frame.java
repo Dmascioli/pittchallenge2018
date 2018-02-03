@@ -44,8 +44,13 @@ public class patient_Frame{
 		case 3: //fill prescriptions
 			patientFrame.add(new fill_prescription());
 			break;
-		case 4: //take survey
-		case 5: //patient help
+		case 4: //more options
+			patientFrame.add(new extended_prescription());
+			break;
+		case 5: //write review
+			patientFrame.add(new writeReview_panel());
+			break;
+		case 6: //patient help
 		}
 		patientFrame.revalidate();
 		patientFrame.repaint();

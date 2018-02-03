@@ -1,29 +1,29 @@
-package gui.patientOptions;
+package gui.pharmacistOptions;
 
 import javax.swing.JPanel;
-import javax.swing.JLabel;
-import javax.swing.SpringLayout;
 
-import gui.patient_Frame;
 import gui.pharm_Frame;
+
+import javax.swing.JLabel;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
-public class view_Profile extends JPanel {
+public class pharmList_panel extends JPanel {
 
 	/**
 	 * Create the panel.
 	 */
-	public view_Profile() {
-setLayout(null);
+	public pharmList_panel() {
+		setLayout(null);
 		
 		JButton btnBack = new JButton("");
 		btnBack.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				patient_Frame.setPanel(0);
+				pharm_Frame.setPanel(0);
 			}
 		});
 		btnBack.setBounds(12, 33, 97, 40);
@@ -33,9 +33,10 @@ setLayout(null);
 		add(btnBack);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Patient-Profile.png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Pharmacies List.png"));
 		lblNewLabel.setBounds(0, -13, 602, 939);
 		add(lblNewLabel);
 
 	}
+
 }
