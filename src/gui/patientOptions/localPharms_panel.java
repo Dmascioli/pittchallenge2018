@@ -31,7 +31,7 @@ public class localPharms_panel extends JPanel {
 		setLayout(null);
 		
 		JButton btnBack = new JButton("");
-		btnBack.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Back-Button.png"));
+		btnBack.setIcon(new ImageIcon("lib/Back-Button.png"));
 		btnBack.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				patient_Frame.setPanel(0);
@@ -56,7 +56,7 @@ public class localPharms_panel extends JPanel {
 		
 		JLabel lblMap = new JLabel("map");
 		lblMap.setBounds(12, 13, 515, 306);
-		lblMap.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\nearbyMap.PNG"));
+		lblMap.setIcon(new ImageIcon("lib/nearbyMap.PNG"));
 		panel.add(lblMap);
 		
 		JScrollPane scrollPane = new JScrollPane();
@@ -68,7 +68,7 @@ public class localPharms_panel extends JPanel {
 		panel_1.setLayout(new GridLayout(2, 0, 0, 0));
 		
 		JButton btnForbes = new JButton("");
-		btnForbes.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Forbes-Pharmacy.png"));
+		btnForbes.setIcon(new ImageIcon("C:lib/Forbes-Pharmacy.png"));
 		btnForbes.setOpaque(false);
 		btnForbes.setContentAreaFilled(false);
 		btnForbes.setBorderPainted(false);
@@ -80,7 +80,7 @@ public class localPharms_panel extends JPanel {
 				patient_Frame.setPanel(6);
 			}
 		});
-		btnFalk.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Falk-Pharmacy.png"));
+		btnFalk.setIcon(new ImageIcon("lib/Falk-Pharmacy.png"));
 		btnFalk.setOpaque(false);
 		btnFalk.setContentAreaFilled(false);
 		btnFalk.setBorderPainted(false);

@@ -31,7 +31,7 @@ public class reviews_panel extends JPanel {
 		add(btnBack);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Reviews.png"));
+		lblNewLabel.setIcon(new ImageIcon("lib/Reviews.png"));
 		lblNewLabel.setBounds(0, -13, 602, 939);
 		add(lblNewLabel);
 	}

@@ -67,7 +67,7 @@ public class pharmOptions_panel extends JPanel {
 		add(btnPatients);
 		
 		JLabel lblBG = new JLabel("");
-		lblBG.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Pharmacist.png"));
+		lblBG.setIcon(new ImageIcon("lib/Pharmacist.png"));
 		lblBG.setBounds(0, -14, 597, 939);
 		add(lblBG);
 

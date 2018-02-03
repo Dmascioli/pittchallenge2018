@@ -19,7 +19,7 @@ public class patientOptions_panel extends JPanel {
 		
 		JButton btnViewYourProfile = new JButton("");
 		btnViewYourProfile.setBounds(63, 443, 469, 129);
-		btnViewYourProfile.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\View-Profile.png"));
+		btnViewYourProfile.setIcon(new ImageIcon("lib/View-Profile.png"));
 		btnViewYourProfile.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				patient_Frame.setPanel(1);
@@ -33,7 +33,7 @@ public class patientOptions_panel extends JPanel {
 		
 		JButton btnFillPrescriptions = new JButton("");
 		btnFillPrescriptions.setBounds(63, 70, 469, 175);
-		btnFillPrescriptions.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Fill-Prescription.png"));
+		btnFillPrescriptions.setIcon(new ImageIcon("lib/Fill-Prescription.png"));
 		btnFillPrescriptions.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				patient_Frame.setPanel(3);
@@ -51,7 +51,7 @@ public class patientOptions_panel extends JPanel {
 			}
 		});
 		btnTakeSurvey.setBounds(63, 609, 457, 170);
-		btnTakeSurvey.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Write-Review.png"));
+		btnTakeSurvey.setIcon(new ImageIcon("lib/Write-Review.png"));
 		btnTakeSurvey.setOpaque(false);
 		btnTakeSurvey.setContentAreaFilled(false);
 		btnTakeSurvey.setBorderPainted(false);
@@ -64,7 +64,7 @@ public class patientOptions_panel extends JPanel {
 				patient_Frame.setPanel(2);
 			}
 		});
-		btnViewLocalPharmacies.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\View-Pharmacies.png"));
+		btnViewLocalPharmacies.setIcon(new ImageIcon("lib/View-Pharmacies.png"));
 		btnViewLocalPharmacies.setOpaque(false);
 		btnViewLocalPharmacies.setContentAreaFilled(false);
 		btnViewLocalPharmacies.setBorderPainted(false);
