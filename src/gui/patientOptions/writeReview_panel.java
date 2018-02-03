@@ -31,7 +31,7 @@ public class writeReview_panel extends JPanel {
 		add(btnBack);
 		
 		JLabel lblBg = new JLabel("");
-		lblBg.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Review.png"));
+		lblBg.setIcon(new ImageIcon("lib/Review.png"));
 		lblBg.setBounds(0, -11, 631, 934);
 		add(lblBg);
 

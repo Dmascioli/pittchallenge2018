@@ -45,7 +45,7 @@ public class fill_prescription extends JPanel {
 		add(btnAmox);
 		
 		JLabel label = new JLabel("");
-		label.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\View Scripts.png"));
+		label.setIcon(new ImageIcon("lib/View Scripts.png"));
 		label.setBounds(-12, 0, 612, 870);
 		add(label);
 

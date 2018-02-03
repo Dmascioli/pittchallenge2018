@@ -49,7 +49,7 @@ public class pharmInfo_panel extends JPanel {
 				pharm_Frame.setPanel(0);
 			}
 		});
-		btnBack.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Back-Button.png"));
+		btnBack.setIcon(new ImageIcon("lib/Back-Button.png"));
 		btnBack.setBounds(12, 13, 97, 45);
 		btnBack.setOpaque(false);
 		btnBack.setContentAreaFilled(false);
@@ -58,7 +58,7 @@ public class pharmInfo_panel extends JPanel {
 		
 		JLabel label = new JLabel("");
 		label.setBounds(0, 5, 600, 876);
-		label.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Pharmacist-Info.png"));
+		label.setIcon(new ImageIcon("lib/Pharmacist-Info.png"));
 		add(label);
 
 	}

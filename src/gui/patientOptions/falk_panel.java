@@ -33,7 +33,7 @@ public class falk_panel extends JPanel {
 		add(btnBack);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Falk-Info.png"));
+		lblNewLabel.setIcon(new ImageIcon("lib/Falk-Info.png"));
 		lblNewLabel.setBounds(0, -26, 602, 939);
 		add(lblNewLabel);
 	}

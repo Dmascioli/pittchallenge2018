@@ -45,7 +45,7 @@ public class pharmList_panel extends JPanel {
 		add(btnFalk);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Pharmacies List.png"));
+		lblNewLabel.setIcon(new ImageIcon("lib/Pharmacies List.png"));
 		lblNewLabel.setBounds(0, -13, 602, 939);
 		add(lblNewLabel);
 
