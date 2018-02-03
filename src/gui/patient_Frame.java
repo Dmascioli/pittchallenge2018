@@ -50,8 +50,11 @@ public class patient_Frame{
 		case 5: //write review
 			patientFrame.add(new writeReview_panel());
 			break;
-		case 6: //patient help
-		}
+		case 6: //falk info
+			patientFrame.add(new falk_panel());
+			break;
+		} 
+		
 		patientFrame.revalidate();
 		patientFrame.repaint();
 	}

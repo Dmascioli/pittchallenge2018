@@ -75,6 +75,11 @@ public class localPharms_panel extends JPanel {
 		
 		
 		JButton btnFalk = new JButton("");
+		btnFalk.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				patient_Frame.setPanel(6);
+			}
+		});
 		btnFalk.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Falk-Pharmacy.png"));
 		btnFalk.setOpaque(false);
 		btnFalk.setContentAreaFilled(false);
