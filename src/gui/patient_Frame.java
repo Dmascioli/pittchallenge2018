@@ -53,7 +53,8 @@ public class patient_Frame{
 		case 6: //falk info
 			patientFrame.add(new falk_panel());
 			break;
-		}
+		} 
+		
 		patientFrame.revalidate();
 		patientFrame.repaint();
 	}
