@@ -20,7 +20,6 @@ public class patientOptions_panel extends JPanel {
 		setLayout(springLayout);
 		
 		JButton btnViewYourProfile = new JButton("");
-		springLayout.putConstraint(SpringLayout.NORTH, btnViewYourProfile, 422, SpringLayout.NORTH, this);
 		springLayout.putConstraint(SpringLayout.WEST, btnViewYourProfile, 63, SpringLayout.WEST, this);
 		btnViewYourProfile.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\View-Profile.png"));
 		btnViewYourProfile.addActionListener(new ActionListener() {
@@ -49,19 +48,24 @@ public class patientOptions_panel extends JPanel {
 		btnFillPrescriptions.setBorderPainted(false);
 		add(btnFillPrescriptions);
 		
-		JButton btnTakeSurvey = new JButton("Take Survey");
-		springLayout.putConstraint(SpringLayout.SOUTH, btnViewYourProfile, -18, SpringLayout.NORTH, btnTakeSurvey);
-		springLayout.putConstraint(SpringLayout.NORTH, btnTakeSurvey, 567, SpringLayout.NORTH, this);
-		springLayout.putConstraint(SpringLayout.SOUTH, btnTakeSurvey, -230, SpringLayout.SOUTH, this);
-		springLayout.putConstraint(SpringLayout.WEST, btnTakeSurvey, 117, SpringLayout.WEST, this);
-		springLayout.putConstraint(SpringLayout.EAST, btnTakeSurvey, -131, SpringLayout.EAST, this);
+		JButton btnTakeSurvey = new JButton("");
+		springLayout.putConstraint(SpringLayout.SOUTH, btnViewYourProfile, -7, SpringLayout.NORTH, btnTakeSurvey);
+		springLayout.putConstraint(SpringLayout.SOUTH, btnTakeSurvey, -214, SpringLayout.SOUTH, this);
+		springLayout.putConstraint(SpringLayout.NORTH, btnTakeSurvey, 556, SpringLayout.NORTH, this);
+		springLayout.putConstraint(SpringLayout.EAST, btnTakeSurvey, -81, SpringLayout.EAST, this);
+		springLayout.putConstraint(SpringLayout.WEST, btnTakeSurvey, 74, SpringLayout.WEST, this);
+		btnTakeSurvey.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Write-Review.png"));
+		btnTakeSurvey.setOpaque(false);
+		btnTakeSurvey.setContentAreaFilled(false);
+		btnTakeSurvey.setBorderPainted(false);
 		add(btnTakeSurvey);
 		
 		JButton btnViewLocalPharmacies = new JButton("");
+		springLayout.putConstraint(SpringLayout.NORTH, btnViewYourProfile, 6, SpringLayout.SOUTH, btnViewLocalPharmacies);
+		springLayout.putConstraint(SpringLayout.SOUTH, btnViewLocalPharmacies, -481, SpringLayout.SOUTH, this);
 		springLayout.putConstraint(SpringLayout.SOUTH, btnFillPrescriptions, -6, SpringLayout.NORTH, btnViewLocalPharmacies);
 		springLayout.putConstraint(SpringLayout.NORTH, btnViewLocalPharmacies, 289, SpringLayout.NORTH, this);
 		springLayout.putConstraint(SpringLayout.WEST, btnViewLocalPharmacies, 63, SpringLayout.WEST, this);
-		springLayout.putConstraint(SpringLayout.SOUTH, btnViewLocalPharmacies, -6, SpringLayout.NORTH, btnViewYourProfile);
 		springLayout.putConstraint(SpringLayout.EAST, btnViewLocalPharmacies, 0, SpringLayout.EAST, btnViewYourProfile);
 		btnViewLocalPharmacies.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
