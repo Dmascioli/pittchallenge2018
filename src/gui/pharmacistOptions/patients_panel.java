@@ -1,29 +1,27 @@
-package gui.patientOptions;
-
-import javax.swing.JPanel;
-import javax.swing.JLabel;
-import javax.swing.SpringLayout;
-
-import gui.patient_Frame;
-import gui.pharm_Frame;
+package gui.pharmacistOptions;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+import gui.pharm_Frame;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class view_Profile extends JPanel {
+public class patients_panel extends JPanel {
 
 	/**
 	 * Create the panel.
 	 */
-	public view_Profile() {
+	public patients_panel() {
 setLayout(null);
 		
 		JButton btnBack = new JButton("");
 		btnBack.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				patient_Frame.setPanel(0);
+				pharm_Frame.setPanel(0);
 			}
 		});
 		btnBack.setBounds(12, 33, 97, 40);
@@ -33,9 +31,9 @@ setLayout(null);
 		add(btnBack);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Patient-Profile.png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\Patients.png"));
 		lblNewLabel.setBounds(0, -13, 602, 939);
 		add(lblNewLabel);
-
 	}
+
 }
