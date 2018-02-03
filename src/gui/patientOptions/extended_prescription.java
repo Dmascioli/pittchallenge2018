@@ -42,6 +42,18 @@ public class extended_prescription extends JPanel {
 		btnAmox.setBorderPainted(false);
 		add(btnAmox);
 		
+		JButton btnFalk = new JButton("");
+		btnFalk.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				patient_Frame.setPanel(6);
+			}
+		});
+		btnFalk.setOpaque(false);
+		btnFalk.setContentAreaFilled(false);
+		btnFalk.setBorderPainted(false);
+		btnFalk.setBounds(36, 465, 505, 270);
+		add(btnFalk);
+		
 		JLabel label = new JLabel("");
 		label.setIcon(new ImageIcon("C:\\Users\\dmasc_000\\workspace\\Pitt Challenge 2018\\lib\\View Scripts Continued.png"));
 		label.setBounds(-12, 0, 612, 870);

@@ -5,6 +5,7 @@ import java.awt.BorderLayout;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import gui.pharmacistOptions.*;
+import gui.patientOptions.falk_panel;
 
 public class pharm_Frame {
 
@@ -41,7 +42,9 @@ public class pharm_Frame {
 		case 4: //bio
 			pharmFrame.add(new pharmInfo_panel());
 			break;
-		case 5: //pharm help
+		case 5: //falk
+			pharmFrame.add(new falk_panel());
+			break;
 		}
 		pharmFrame.revalidate();
 		pharmFrame.repaint();
